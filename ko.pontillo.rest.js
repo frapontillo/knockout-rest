@@ -17,6 +17,7 @@ Uses:
     This library requires:
     - knockout-2.1.0.js (it should work with 2.0.0+)
     - knockout.mapping-2.1.0.js
+	- jQuery
 License (MIT):
 	Copyright (c) 2012 Francesco Pontillo
 	Permission is hereby granted, free of charge, to any person obtaining a

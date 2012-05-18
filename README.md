@@ -23,10 +23,11 @@ The library is released "as is", without any warranty nor promises.
 It is licensed under the MIT license.
 
 ##Getting started
-Knockout-REST requires two libraries:
+Knockout-REST requires three libraries:
 
  * [knockout-2.1.0.js](http://github.com/SteveSanderson/knockout) (it should work with 2.0.0+), for the whole data-bind sorcery
  * [knockout.mapping-2.1.0.js](http://github.com/SteveSanderson/knockout.mapping), for mapping objects to and from our RESTful Web Service
+ * [jQuery](http://jquery.com), uses `$.ajax`
  
 ## Basic Usage
 
