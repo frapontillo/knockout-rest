@@ -75,7 +75,7 @@ This default behavior can be overridden by extending the Entity and creating a c
 Every RESTful Action on entities accepts a success callback. An error callback will be implemented in the future.
 
 ## Change tracking
-All entities have a few observables thraking the state of the entity itself.
+All entities have a few observables tracking the state of the entity itself.
 
  * `isUpdating` checks if an entity is currently being updated from the server.
  * `isLoaded` checks if an entity is loaded.
