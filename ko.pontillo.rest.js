@@ -179,7 +179,7 @@ ko.pontillo.rest.entity = function (dataModel) {
 
     // The GET method, reads an element from an URL and updates the model
     item.Get = function (url, callback) {
-        $.ajax({
+        return $.ajax({
             type: 'GET',
             url: url,
             beforeSend: function () {
@@ -210,7 +210,7 @@ ko.pontillo.rest.entity = function (dataModel) {
 
     // The POST method, adds an element to an URL and updates the model
     item.Post = function (url, callback) {
-        $.ajax({
+        return $.ajax({
             type: "POST",
             url: url,
             contentType: "application/json",
@@ -244,7 +244,7 @@ ko.pontillo.rest.entity = function (dataModel) {
 
     // The PUT method, updates an element to an URL and updates the model
     item.Put = function (url, callback) {
-        $.ajax({
+        return $.ajax({
             type: "PUT",
             url: url,
             contentType: "application/json",
@@ -278,7 +278,7 @@ ko.pontillo.rest.entity = function (dataModel) {
 
     // The DELETE method, deletes an element from an URL
     item.Delete = function (url, callback) {
-        $.ajax({
+        return $.ajax({
             type: "DELETE",
             url: url,
             contentType: "application/json",
