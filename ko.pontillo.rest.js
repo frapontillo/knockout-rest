@@ -1,4 +1,4 @@
-﻿/*
+/*
 Extension library for Knockout.js
 ----------------------------------------------------------------------------------------------------------
 Author:
@@ -17,7 +17,7 @@ Uses:
     This library requires:
     - knockout-2.1.0.js (it should work with 2.0.0+)
     - knockout.mapping-2.1.0.js
-	- jQuery
+    - jquery-1.5 or greater
 License (MIT):
 	Copyright (c) 2012 Francesco Pontillo
 	Permission is hereby granted, free of charge, to any person obtaining a
@@ -201,10 +201,9 @@ ko.pontillo.rest.entity = function (dataModel) {
             error: function (jqXHR, textStatus, errorThrown) {
                 item.isError(true);
                 console.log("Error while getting the resource at " + url + " .");
-            },
-            complete: function () {
-                item.isUpdating(false);
             }
+        }).always(function () {
+       	    item.isUpdating(false);
         });
     };
 
@@ -235,10 +234,9 @@ ko.pontillo.rest.entity = function (dataModel) {
             error: function (jqXHR, textStatus, errorThrown) {
                 item.isError(true);
                 console.log("Error while posting the resource at " + url + " .");
-            },
-            complete: function () {
-                item.isUpdating(false);
             }
+        }).always(function () {
+       	    item.isUpdating(false);
         });
     };
 
@@ -269,10 +267,9 @@ ko.pontillo.rest.entity = function (dataModel) {
             error: function (jqXHR, textStatus, errorThrown) {
                 item.isError(true);
                 console.log("Error while putting the resource at " + url + " .");
-            },
-            complete: function () {
-                item.isUpdating(false);
             }
+        }).always(function () {
+       	    item.isUpdating(false);
         });
     };
 
@@ -298,10 +295,9 @@ ko.pontillo.rest.entity = function (dataModel) {
             error: function (jqXHR, textStatus, errorThrown) {
                 item.isError(true);
                 console.log("Error while deleting the resource at " + url + " .");
-            },
-            complete: function () {
-                item.isUpdating(false);
             }
+        }).always(function () {
+       	    item.isUpdating(false);
         });
     };
 
