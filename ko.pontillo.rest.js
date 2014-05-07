@@ -101,8 +101,7 @@ ko.pontillo.rest.entity = function (dataModel) {
 
     item.newEntity = function () {
         // Set the new data
-        data = newDataModel || {};
-        item.setData(data);
+        item.setData(newDataModel || {});
         item.isLoaded(false);
     };
 
