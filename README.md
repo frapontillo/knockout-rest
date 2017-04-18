@@ -3,10 +3,10 @@ Knockout-REST
 
 **Knockout-REST** is a simple library to extend Knockout.js objects with RESTful actions.
 
-###Author
+### Author
 Francesco Pontillo
 
-###Description:
+### Description:
 The library implements classes and methods to access a RESTful service,
 GET, PUT, POST, DELETE for any resource.
 It aims to provide a general extensible framework for RESTful application
@@ -18,11 +18,11 @@ Every entity:
  * can track its and its children's changes
  * can undo all the changes in the item
 
-###License:
+### License:
 The library is released "as is", without any warranty nor promises.
 It is licensed under the MIT license.
 
-##Getting started
+## Getting started
 Knockout-REST requires three libraries:
 
  * [knockout-2.1.0.js](http://github.com/SteveSanderson/knockout) (it should work with 2.0.0+), for the whole data-bind sorcery
